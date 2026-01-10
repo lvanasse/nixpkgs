@@ -3854,6 +3854,8 @@ with pkgs;
 
   trace-cmd = callPackage ../os-specific/linux/trace-cmd { };
 
+  tracecompass = callPackage ../by-name/tr/tracecompass/package.nix { };
+
   kernelshark = qt6Packages.callPackage ../os-specific/linux/trace-cmd/kernelshark.nix { };
 
   translatelocally-models = recurseIntoAttrs (callPackages ../misc/translatelocally-models { });
